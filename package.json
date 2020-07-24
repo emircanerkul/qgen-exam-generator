@@ -1,0 +1,35 @@
+{
+  "name": "qgen",
+  "version": "1.0.0",
+  "description": "SQL Query Generator",
+  "main": "qgen.js",
+  "dependencies": {
+    "alertifyjs": "^1.13.1",
+    "bezier-easing": "^2.1.0",
+    "file-saver": "^1.3.2",
+    "jquery": "^3.5.1",
+    "js-base64": "^3.2.4",
+    "jspdf": "^1.5.3",
+    "jszip": "^3.5.0"
+  },
+  "watch": {
+    "build": "main.js"
+  },
+  "scripts": {
+    "build": "browserify main.js -o /home/emircanerkul/projects/web/qgen/assets/js/main.min.js",
+    "compress": "uglifyjs assets/js/main.min.js --compress sequences=true,conditionals=true,booleans=true,drop_console=false,join_vars=true,unused=false --mangle toplevel --output assets/js/main.min.js",
+    "watch": "npm-watch"
+  },
+  "devDependencies": {},
+  "author": "Emircan ERKUL",
+  "license": "MIT",
+  "homepage": "https://github.com/emircanerkul/qgen",
+  "bugs": {
+    "url": "https://github.com/emircanerkul/qgen/issues",
+    "email": "qgen@emircanerkul.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emircanerkul/qgen.git"
+  }
+}

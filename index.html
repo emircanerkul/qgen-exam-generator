@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QGen | SQL Sorgu Oluşturucu</title>
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/skeleton.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div class="container main">
+      <div class="row">
+        <h1 class="twelve column title">
+          <b>QGen</b> | SQL Sorgu Oluşturucu <i>Demo</i>
+        </h1>
+      </div>
+      <div class="row">
+        <div id="table" class="four columns">
+          <div class="row">
+            <div class="twelve columns">
+              <input class="u-full-width" type="text" placeholder="Tablo Adı" />
+            </div>
+          </div>
+          <div id="property-template" class="row property">
+            <div class="four columns">
+              <input
+                class="u-full-width property-name"
+                type="text"
+                placeholder="Nitelik"
+              />
+            </div>
+            <div class="four columns">
+              <select class="u-full-width">
+                <option value="string" selected>String</option>
+                <option value="number">Number</option>
+              </select>
+            </div>
+            <div class="four columns">
+              <select class="u-full-width">
+                <option value="" selected></option>
+                <option value="province">Province</option>
+                <option value="name">Name</option>
+                <option value="surname">Surname</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="twelve columns">
+              <button id="add-property" class="u-full-width">
+                EKLE
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="result" class="eight columns">
+          <div id="controls" class="row">
+            <div class="eight columns">
+              <select class="u-full-width">
+                <option selected>Soru, cevap ve zorluk derecesi</option>
+                <option>Soru ve zorluk derecesi</option>
+                <option>Sadece soru</option>
+              </select>
+            </div>
+            <div class="two columns">
+              <button id="download" class="u-full-width">
+                <svg
+                  viewBox="0 0 60 30"
+                  width="32px"
+                  height="32px"
+                  x="0px"
+                  y="0px"
+                >
+                  <path
+                    fill="#555"
+                    d="M23 14l-8 8-8-8h5v-12h6v12zM15 22h-15v8h30v-8h-15zM28 26h-4v-2h4v2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="two columns">
+              <button id="preview" class="u-full-width">
+                <svg
+                  viewBox="0 0 60 30"
+                  width="32px"
+                  height="32px"
+                  x="0px"
+                  y="0px"
+                >
+                  <path
+                    fill="#555"
+                    d="M24 22h-3.172l-5-5 5-5h3.172v5l7-7-7-7v5h-4c-0.53 0-1.039 0.211-1.414 0.586l-5.586 5.586-5.586-5.586c-0.375-0.375-0.884-0.586-1.414-0.586h-6v4h5.172l5 5-5 5h-5.172v4h6c0.53 0 1.039-0.211 1.414-0.586l5.586-5.586 5.586 5.586c0.375 0.375 0.884 0.586 1.414 0.586h4v5l7-7-7-7v5z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="twelve columns">
+              <iframe src="" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="generate" class="u-full-width">Oluştur <span></span></button>
+    </div>
+
+    <a id="footer" href="https://github.com/emircanerkul/qgen" target="_blank">
+      https://github.com/emircanerkul/qgen
+    </a>
+
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>
