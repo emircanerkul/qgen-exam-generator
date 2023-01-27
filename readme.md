@@ -1,4 +1,4 @@
-### QGen | SQL Sorgu Oluşturucu
+### QGen | SQL Sınav Oluşturucu
 
 ![Preview](preview.png)
 
